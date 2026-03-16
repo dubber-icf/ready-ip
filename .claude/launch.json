@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ready-ip-web",
+      "runtimeExecutable": "/opt/homebrew/bin/npx",
+      "runtimeArgs": ["next", "dev", "--port", "3333"],
+      "port": 3333,
+      "cwd": "apps/web"
+    }
+  ]
+}

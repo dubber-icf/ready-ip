@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" fill="none">
+  <!-- READY IP Logo: Hex bolt mark + industrial wordmark -->
+
+  <!-- Hex Bolt Icon -->
+  <g transform="translate(10, 4)">
+    <!-- Outer hex (bolt head) -->
+    <polygon points="36,0 66.5,17.6 66.5,52.8 36,70.4 5.5,52.8 5.5,17.6"
+             fill="none" stroke="#6B7280" stroke-width="2.5"/>
+    <!-- Inner hex (socket) -->
+    <polygon points="36,14 53.5,24.1 53.5,44.3 36,54.4 18.5,44.3 18.5,24.1"
+             fill="none" stroke="#9CA3AF" stroke-width="1.5"/>
+    <!-- Connection nodes at vertices -->
+    <circle cx="36" cy="0" r="3" fill="#F59E0B"/>
+    <circle cx="66.5" cy="17.6" r="3" fill="#F59E0B"/>
+    <circle cx="66.5" cy="52.8" r="3" fill="#3B82F6"/>
+    <circle cx="36" cy="70.4" r="3" fill="#3B82F6"/>
+    <circle cx="5.5" cy="52.8" r="3" fill="#3B82F6"/>
+    <circle cx="5.5" cy="17.6" r="3" fill="#F59E0B"/>
+    <!-- Centre cross (patent/crosshair motif) -->
+    <line x1="36" y1="26" x2="36" y2="44" stroke="#E2E8F0" stroke-width="1.5"/>
+    <line x1="27" y1="35.2" x2="45" y2="35.2" stroke="#E2E8F0" stroke-width="1.5"/>
+  </g>
+
+  <!-- Wordmark: READY -->
+  <text x="92" y="53" font-family="Orbitron, sans-serif" font-weight="700" font-size="42" letter-spacing="0.08em" fill="#E2E8F0">READY</text>
+
+  <!-- Wordmark: IP (in brand amber) -->
+  <text x="332" y="53" font-family="Orbitron, sans-serif" font-weight="800" font-size="42" letter-spacing="0.08em" fill="#F59E0B">IP</text>
+
+  <!-- Tagline -->
+  <text x="92" y="72" font-family="JetBrains Mono, monospace" font-weight="400" font-size="9" letter-spacing="0.2em" fill="#6B7280" text-transform="uppercase">PATENT INTELLIGENCE FOR SUPPLY CHAIN RESILIENCE</text>
+</svg>

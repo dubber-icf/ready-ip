@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-industrial-950 text-industrial-200 font-body antialiased;
+  }
+
+  /* Industrial scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-industrial-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-industrial-600 rounded-sm;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-industrial-500;
+  }
+
+  /* Selection colour */
+  ::selection {
+    @apply bg-brand-primary/20 text-industrial-50;
+  }
+}
+
+@layer components {
+  /* Industrial section header style */
+  .section-header {
+    @apply font-display text-xs font-semibold uppercase tracking-industrial text-industrial-400;
+  }
+
+  /* Data label style */
+  .data-label {
+    @apply font-mono text-xs text-industrial-400;
+  }
+
+  /* Data value style */
+  .data-value {
+    @apply font-mono text-sm text-industrial-100;
+  }
+
+  /* Carbon fibre background texture */
+  .bg-carbon-texture {
+    background-color: theme('colors.industrial.950');
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.008) 2px,
+        rgba(255, 255, 255, 0.008) 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.008) 2px,
+        rgba(255, 255, 255, 0.008) 4px
+      );
+  }
+
+  /* Blueprint grid overlay */
+  .bg-blueprint-grid {
+    background-image:
+      linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+@layer utilities {
+  /* Mechanical easing curves */
+  .ease-robotic {
+    transition-timing-function: cubic-bezier(0.22, 0.68, 0.35, 1.0);
+  }
+  .ease-conveyor {
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1.0);
+  }
+
+  /* Metal sheen effect */
+  .metal-sheen {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 40%,
+      rgba(0, 0, 0, 0.08) 100%
+    );
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
